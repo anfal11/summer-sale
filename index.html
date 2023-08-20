@@ -61,8 +61,8 @@
                         <h1 class="text-4xl font-semibold mt-28 mb-8 text-center lg:text-left">Kitchenware</h1>
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                             <!-- card -1  -->
-                            <div>
-                                <div class="card w-[340] bg-base-100 shadow-xl rounded-lg h-96 p-2">
+                            <div class="hover:cursor-pointer" id="first-card-click">
+                                <div onclick="handleClick(this)" class="card w-[340] bg-base-100 shadow-xl rounded-lg h-80 p-2">
                                     <figure class="bg-[#1111110d] mx-5 mt-5 rounded-lg"><img class=""
                                             src="./images/prod1.png" alt="" /></figure>
                                     <!-- rating -->
@@ -91,15 +91,15 @@
                                     </div>
                                     <div class="">
                                         <h2 class="font-semibold text-xl text-center">K. Accessories</h2>
-                                        <p class="text-[#11111180] font-normal text-xl text-center mb-5"><span>39.00</span> TK
+                                        <p class="text-[#11111180] font-normal text-xl text-center mb-5"><span id="first-card">39.00</span> TK
                                         </p>
                                     </div>
                                 </div>
                             </div>
     
                             <!-- card -2  -->
-                            <div>
-                                <div class="card w-[340] bg-base-100 shadow-xl rounded-lg h-96 p-2">
+                            <div class="hover:cursor-pointer" id="second-card-click">
+                                <div onclick="handleClick(this)" class="card w-[340] bg-base-100 shadow-xl rounded-lg h-80 p-2">
                                     <figure class="bg-[#1111110d] mx-5 mt-5 rounded-lg"><img class=""
                                             src="./images/prod2.png" alt="" /></figure>
                                     <!-- rating -->
@@ -128,15 +128,15 @@
                                     </div>
                                     <div class="">
                                         <h2 class="font-semibold text-xl text-center">K. Accessories</h2>
-                                        <p class="text-[#11111180] font-normal text-xl text-center mb-5"><span>25.00</span> TK
+                                        <p class="text-[#11111180] font-normal text-xl text-center mb-5"><span id="second-card">25.00</span> TK
                                         </p>
                                     </div>
                                 </div>
                             </div>
     
                             <!-- card -3  -->
-                            <div>
-                                <div class="card w-[340] bg-base-100 shadow-xl rounded-lg h-96 p-2">
+                            <div class="hover:cursor-pointer" id="third-card-click">
+                                <div onclick="handleClick(this)"class="card w-[340] bg-base-100 shadow-xl rounded-lg h-80 p-2">
                                     <figure class="bg-[#1111110d] mx-5 mt-5 rounded-lg"><img class=""
                                             src="./images/prod3.png" alt="" /></figure>
                                     <!-- rating -->
@@ -165,7 +165,7 @@
                                     </div>
                                     <div class="">
                                         <h2 class="font-semibold text-xl text-center">Home Cooker</h2>
-                                        <p class="text-[#11111180] font-normal text-xl text-center mb-5"><span>49.00</span> TK
+                                        <p class="text-[#11111180] font-normal text-xl text-center mb-5"><span id="third-card">49.00</span> TK
                                         </p>
                                     </div>
                                 </div>
@@ -176,8 +176,8 @@
                         <h1 class="text-4xl font-semibold mt-28 mb-8 text-center lg:text-left">Sportswear</h1>
                         <div class="grid gird-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                             <!-- card -1  -->
-                            <div>
-                                <div class="card w-[340] bg-base-100 shadow-xl rounded-lg h-96 p-2">
+                            <div class="hover:cursor-pointer" id="fourth-card-click">
+                                <div onclick="handleClick(this)" class="card w-[340] bg-base-100 shadow-xl rounded-lg h-80 p-2">
                                     <figure class="bg-[#1111110d] mx-5 mt-5 rounded-lg"><img class=""
                                             src="./images/prod4.png" alt="" /></figure>
                                     <!-- rating -->
@@ -206,15 +206,15 @@
                                     </div>
                                     <div class="">
                                         <h2 class="font-semibold text-xl text-center">Sports Back Cap</h2>
-                                        <p class="text-[#11111180] font-normal text-xl text-center mb-5"><span>49.00</span> TK
+                                        <p class="text-[#11111180] font-normal text-xl text-center mb-5"><span id="fourth-card">49.00</span> TK
                                         </p>
                                     </div>
                                 </div>
                             </div>
     
                             <!-- card -2  -->
-                            <div>
-                                <div class="card w-[340] bg-base-100 shadow-xl rounded-lg h-96 p-2">
+                            <div class="hover:cursor-pointer" id="fifth-card-click">
+                                <div onclick="handleClick(this)" class="card w-[340] bg-base-100 shadow-xl rounded-lg h-80 p-2">
                                     <figure class="bg-[#1111110d] mx-5 mt-5 rounded-lg"><img class=""
                                             src="./images/prod5.png" alt="" /></figure>
                                     <!-- rating -->
@@ -243,15 +243,15 @@
                                     </div>
                                     <div class="">
                                         <h2 class="font-semibold text-xl text-center">Full Jersey Set</h2>
-                                        <p class="text-[#11111180] font-normal text-xl text-center mb-5"><span>69.00</span> TK
+                                        <p class="text-[#11111180] font-normal text-xl text-center mb-5"><span id="fifth-card">69.00</span> TK
                                         </p>
                                     </div>
                                 </div>
                             </div>
     
                             <!-- card -3  -->
-                            <div>
-                                <div class="card w-[340] bg-base-100 shadow-xl rounded-lg h-96 p-2">
+                            <div class="hover:cursor-pointer" id="sixth-card-click">
+                                <div onclick="handleClick(this)" class="card w-[340] bg-base-100 shadow-xl rounded-lg h-80 p-2">
                                     <figure class="bg-[#1111110d] mx-5 mt-5 rounded-lg"><img class=""
                                             src="./images/prod6.png" alt="" /></figure>
                                     <!-- rating -->
@@ -280,7 +280,7 @@
                                     </div>
                                     <div class="">
                                         <h2 class="font-semibold text-xl text-center">Sports cates</h2>
-                                        <p class="text-[#11111180] font-normal text-xl text-center mb-5"><span>159.00</span> TK
+                                        <p class="text-[#11111180] font-normal text-xl text-center mb-5"><span id="sixth-card">159.00</span> TK
                                         </p>
                                     </div>
                                 </div>
@@ -291,8 +291,8 @@
                         <h1 class="text-4xl font-semibold mt-28 mb-8 text-center lg:text-left">Furniture</h1>
                         <div class="grid gird-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                             <!-- card -1  -->
-                            <div>
-                                <div class="card w-[340] bg-base-100 shadow-xl rounded-lg h-96 p-2">
+                            <div class="hover:cursor-pointer" id="seventh-card-click">
+                                <div onclick="handleClick(this)" class="card w-[340] bg-base-100 shadow-xl rounded-lg h-80 p-2">
                                     <figure class="bg-[#1111110d] mx-5 mt-5 rounded-lg"><img class=""
                                             src="./images/prod7.png" alt="" /></figure>
                                     <!-- rating -->
@@ -321,15 +321,15 @@
                                     </div>
                                     <div class="">
                                         <h2 class="font-semibold text-xl text-center">Single Relax Chair</h2>
-                                        <p class="text-[#11111180] font-normal text-xl text-center mb-5"><span>185.00</span> TK
+                                        <p class="text-[#11111180] font-normal text-xl text-center mb-5"><span id="seventh-card">185.00</span> TK
                                         </p>
                                     </div>
                                 </div>
                             </div>
     
                             <!-- card -2  -->
-                            <div>
-                                <div class="card w-[340] bg-base-100 shadow-xl rounded-lg h-96 p-2">
+                            <div class="hover:cursor-pointer" id="eighth-card-click">
+                                <div onclick="handleClick(this)" class="card w-[340] bg-base-100 shadow-xl rounded-lg h-80 p-2">
                                     <figure class="bg-[#1111110d] mx-5 mt-5 rounded-lg"><img class=""
                                             src="./images/prod8.png" alt="" /></figure>
                                     <!-- rating -->
@@ -358,15 +358,15 @@
                                     </div>
                                     <div class="">
                                         <h2 class="font-semibold text-xl text-center">Children play</h2>
-                                        <p class="text-[#11111180] font-normal text-xl text-center mb-5"><span>299.00</span> TK
+                                        <p class="text-[#11111180] font-normal text-xl text-center mb-5"><span id="eighth-card">299.00</span> TK
                                         </p>
                                     </div>
                                 </div>
                             </div>
     
                             <!-- card -3  -->
-                            <div>
-                                <div class="card w-[340] bg-base-100 shadow-xl rounded-lg h-96 p-2">
+                            <div class="hover:cursor-pointer" id="ninth-card-click">
+                                <div onclick="handleClick(this)"class="card w-[340] bg-base-100 shadow-xl rounded-lg h-80 p-2">
                                     <figure class="bg-[#1111110d] mx-5 mt-5 rounded-lg"><img class=""
                                             src="./images/prod9.png" alt="" /></figure>
                                     <!-- rating -->
@@ -393,9 +393,9 @@
                                         <input type="radio" name="rating-18-10"
                                             class="bg-[#FFC107] mask mask-star-2 mask-half-2" checked/>
                                     </div>
-                                    <div class="">
+                                    <div>
                                         <h2 class="font-semibold text-xl text-center">Flexible Sofa</h2>
-                                        <p class="text-[#11111180] font-normal text-xl text-center mb-5"><span>339.00</span> TK
+                                        <p class="text-[#11111180] font-normal text-xl text-center mb-5"><span id="ninth-card">339.00</span> TK
                                         </p>
                                     </div>
                                 </div>
@@ -404,14 +404,23 @@
                     </div>
 
                     <!-- Right side -->
+                    
                     <div>
                         <div class="card w-[340] bg-base-100 shadow-xl rounded-lg h-36 mt-10 lg:mt-48 p-2">
                             <h1 class="text-2xl font-medium mt-6 m-4 pl-2">Have coupon?</h1>
                             <div class="join pl-1">
-                                <input class="input input-bordered join-item w-[130px]" placeholder="Coupon code"/>
-                                <button class="btn join-item rounded-lg bg-[#E527B2] text-white">Apply</button>
+                                <input id="coupon-code" class="input input-bordered join-item w-[130px]" placeholder="Coupon code"/>
+                                <button id="apply-btn" class="btn join-item rounded-lg pointer-events-none bg-gray-300 text-white">Apply</button> <!--bg-[#E527B2]-->
                               </div>
-                             
+                        </div>
+                        <div class="card w-[340] bg-base-100 shadow-xl rounded-lg h-auto mt-6 p-2">
+                            <div id="price-send">
+
+                            </div>
+                            <h1 class="text-xl font-medium mt-1 m-4">Total Price: <span id="total-previous-price"></span> </h1>
+                            <h1 class="text-xl font-medium mt-1 m-4">Discount: <span id="discount"></span> </h1>
+                            <h1 class="text-xl font-medium mt-1 m-4 ">Total: <span id="total-current-price"></span> </h1> <hr>
+                            <button id="purchase-btn" class="btn join-item rounded-lg  text-white relative top-8 pointer-events-none bg-gray-300">Make Purchase</button> <!--bg-[#E527B2]-->
                         </div>
                     </div>
                 </div>
@@ -419,7 +428,7 @@
         </section>
     </main>
 
-    <script src="./js/script.js"></script>
+   <script src="./js/script.js"></script>
 </body>
 
 </html>
