@@ -26,32 +26,28 @@ function handleClick(data) {
         purchaseBtn.style.backgroundColor = "#E527B2";
         purchaseBtn.style.color = "#fff";
     } 
-
+    
     if (total >= 200){
-        const applyBtn = document.getElementById("apply-btn");
-        applyBtn.disabled = false;
-        applyBtn.style.backgroundColor = "#E527B2";
-        applyBtn.style.color = "#fff";  
-        // applyBtn.addEventListener("click", function(){
-        //     console.log(total);
-        //     console.log("clicked");
-        //     const couponCode = document.getElementById("coupon-code").value;
-        //     if (couponCode.toUpperCase() === "SELL20"){
-        //         const discountPrice = total * 0.2;
-        //         discount.innerText = discountPrice.toFixed(2) + 'TK';
-        //         totalCurrentPrice.innerText = (total - discountPrice).toFixed(2) + 'TK';
-        //     }
-        //     else{
-        //         alert("Invalid Coupon Code");
-        //     }
-        // })
+        const btnApply = document.getElementById("btn-apply");
+        btnApply.disabled = false;
+        btnApply.style.backgroundColor = "#E527B2";
+        btnApply.style.color = "#fff"; 
 
+        btnApply.addEventListener("click", function(){
+            console.log(total);
+            console.log("clicked");
+            const couponCode = document.getElementById("coupon-code");
+            if (couponCode.value === "SELL20"){
+                const discountPrice = total * 0.2;
+                discount.innerText = discountPrice.toFixed(2) + 'TK';
+                totalCurrentPrice.innerText = (total - discountPrice).toFixed(2) + 'TK';
+            }
+            else{
+                alert("Invalid Coupon Code");
+            }
+        })  
+     
         
     }
 
-    
 }
-
-
-
-
