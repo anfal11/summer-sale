@@ -31,6 +31,7 @@ function handleClick(data) {
     purchaseBtn.style.backgroundColor = "#E527B2";
     purchaseBtn.style.color = "#fff";
     purchaseBtn.style.cursor = "pointer";
+    showModal();
   }
 
   if (total >= 200) {
@@ -41,7 +42,6 @@ function handleClick(data) {
     btnApply.style.cursor = "pointer";
 
     btnApply.addEventListener("click", function () {
-   
       const couponCode = document.getElementById("coupon-code");
       if (couponCode.value === "SELL200") {
         const discountPrice = total * 0.2;
@@ -54,3 +54,9 @@ function handleClick(data) {
   }
 }
 
+function showModal() {
+  if (total > 0) {
+    const modal = document.getElementById("purchase-btn");
+    modal.disabled = false;
+  }
+}
