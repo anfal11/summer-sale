@@ -41,10 +41,9 @@ function handleClick(data) {
     btnApply.style.cursor = "pointer";
 
     btnApply.addEventListener("click", function () {
-      console.log(total);
-      console.log("clicked");
+   
       const couponCode = document.getElementById("coupon-code");
-      if (couponCode.value.toUpperCase() === "SELL200") {
+      if (couponCode.value === "SELL200") {
         const discountPrice = total * 0.2;
         discount.innerText = discountPrice.toFixed(2) + "TK";
         totalCurrentPrice.innerText = (total - discountPrice).toFixed(2) + "TK";
@@ -54,3 +53,4 @@ function handleClick(data) {
     });
   }
 }
+

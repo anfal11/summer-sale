@@ -429,8 +429,8 @@
                             <div class="join pl-1">
                                 <input id="coupon-code" class="input input-bordered join-item w-[130px]"
                                     placeholder="Coupon code" />
-                                <button onclick="applyButton()" id="btn-apply"
-                                    class="btn join-item rounded-lg bg-gray-300 text-white">Apply</button>
+                                <button id="btn-apply" class="btn join-item rounded-lg bg-gray-300 text-white"
+                                    disabled>Apply</button>
                                 <!--bg-[#E527B2]-->
                             </div>
 
@@ -446,16 +446,41 @@
                             <h1 class="text-xl font-medium mt-1 m-4 ">Total: <span id="total-current-price"></span>
                             </h1>
                             <hr>
-                            <button id="purchase-btn"
+                            <a href="#my_modal_8"
+                                class="btn join-item rounded-lg  text-white relative top-8 bg-gray-800" disabled
+                                id="purchase-btn">Make Purchase</a>
+                            <!-- <button id="purchase-btn"  onclick="my_modal_3.showModal()"
                                 class="btn join-item rounded-lg  text-white relative top-8 pointer-events-none bg-gray-300">Make
-                                Purchase</button> <!--bg-[#E527B2]-->
+                                Purchase</button> bg-[#E527B2] -->
+
+                            <!-- label input -->
+                            <label for="my_modal_1" class="text-third text-lg font-bold text-center pt-2"></label>
+                            <input type="checkbox" id="my_modal_1" class="modal-toggle" />
+
+                            <!-- modal div -->
+
+                            <div class="modal">
+                                <div class="modal-box">
+                                    <div class="card w-full bg-white rounded-lg">
+                                        <figure><img src="./images/congo.png" alt="" class="py-6" /></figure>
+                                        <div class="card-body">
+                                            <h2 class="text-center text-[#121212] font-bold text-2xl pb-5">
+                                                Congratulations</h2>
+                                            <p class="text-center font-medium text-base text-second">Your Purchase the product</p>
+                                        </div>
+                                    </div>
+                                    <div class="modal-action justify-center mb-10">
+                                        <label for="my_modal_1"
+                                            class="bg-[#E527B2] px-2 md:px-3 py-1 text-white font-bold text-sm md:text-xl rounded-lg"><a href="">Go Home</a></label>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-
     <script src="./js/script.js"></script>
 </body>
 
