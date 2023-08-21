@@ -40,17 +40,6 @@ function handleClick(data) {
     btnApply.style.backgroundColor = "#E527B2";
     btnApply.style.color = "#fff";
     btnApply.style.cursor = "pointer";
-
-    btnApply.addEventListener("click", function () {
-      const couponCode = document.getElementById("coupon-code");
-      if (couponCode.value === "SELL200") {
-        const discountPrice = total * 0.2;
-        discount.innerText = discountPrice.toFixed(2) + "TK";
-        totalCurrentPrice.innerText = (total - discountPrice).toFixed(2) + "TK";
-      } else {
-        alert("Invalid Coupon Code");
-      }
-    });
   }
 }
 
@@ -60,3 +49,17 @@ function showModal() {
     modal.disabled = false;
   }
 }
+
+function applyBtn() {
+  const couponCode = document.getElementById("coupon-code").value;
+  if (couponCode === "SELL200") {
+    const discountPrice = total * 0.2;
+    discount.innerText = discountPrice.toFixed(2) + "TK";
+    totalCurrentPrice.innerText = (total - discountPrice).toFixed(2) + "TK";
+  } else {
+    alert("Invalid Coupon Code");
+    couponCode = "";
+  }
+}
+
+document.getElementById("btn-apply").addEventListener("click", applyBtn);
