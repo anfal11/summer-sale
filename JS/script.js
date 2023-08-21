@@ -24,6 +24,7 @@ function handleClick(data) {
 
   total += price;
   totalPreviousPrice.innerText = total.toFixed(2) + "TK";
+  totalCurrentPrice.innerText = total.toFixed(2) + "TK";
 
   if (total > 0) {
     const purchaseBtn = document.getElementById("purchase-btn");
@@ -58,7 +59,6 @@ function applyBtn() {
     totalCurrentPrice.innerText = (total - discountPrice).toFixed(2) + "TK";
   } else {
     alert("Invalid Coupon Code");
-    couponCode = "";
   }
 }
 
